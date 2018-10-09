@@ -190,10 +190,10 @@
 		B7BCEB8B216CAC6400B893A2 /* WallPaper */ = {
 			isa = PBXGroup;
 			children = (
+				B7BCEBA4216CADDD00B893A2 /* WallPaperViewController.swift */,
 				B7BCEBA3216CADDD00B893A2 /* WallPaper1View.swift */,
 				B7BCEBA6216CADDE00B893A2 /* WallPaper2View.swift */,
 				B7BCEBA5216CADDE00B893A2 /* WallPaper3View.swift */,
-				B7BCEBA4216CADDD00B893A2 /* WallPaperViewController.swift */,
 				B7BCEB8C216CAC6900B893A2 /* Cell */,
 			);
 			path = WallPaper;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class WallPaperViewController: UIViewController {
 	
@@ -71,6 +72,7 @@ class WallPaperViewController: UIViewController {
     }
 	
 	@objc func save(){
+		Analytics.logEvent("saveWallPaper", parameters: nil)
 		let button = self.saveButton
 		UIView.animate(withDuration: 0.05, animations: {[weak button] in
 			button?.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
