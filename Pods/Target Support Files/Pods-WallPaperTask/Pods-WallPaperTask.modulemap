@@ -1,0 +1,6 @@
+framework module Pods_WallPaperTask {
+  umbrella header "Pods-WallPaperTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

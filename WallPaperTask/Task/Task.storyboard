@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGI-TX-ozh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--壁紙タスクン-->
+        <scene sceneID="hvW-ng-jZL">
+            <objects>
+                <viewController id="1Vl-LO-eSn" customClass="TaskViewController" customModule="壁紙タスクン" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IIU-yc-hsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b78-d7-A4q">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OQ7-rf-SCX" firstAttribute="trailing" secondItem="b78-d7-A4q" secondAttribute="trailing" id="Nlk-OW-300"/>
+                            <constraint firstItem="b78-d7-A4q" firstAttribute="leading" secondItem="OQ7-rf-SCX" secondAttribute="leading" id="eK6-Eg-kMZ"/>
+                            <constraint firstItem="OQ7-rf-SCX" firstAttribute="bottom" secondItem="b78-d7-A4q" secondAttribute="bottom" id="mhY-uL-9yM"/>
+                            <constraint firstItem="b78-d7-A4q" firstAttribute="top" secondItem="OQ7-rf-SCX" secondAttribute="top" id="oiM-xX-vol"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OQ7-rf-SCX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="壁紙タスクン" id="Mt7-7l-Hl0">
+                        <barButtonItem key="leftBarButtonItem" title="設定" id="ERh-wf-Yye">
+                            <connections>
+                                <segue destination="6Jn-0P-bb0" kind="push" id="ubY-1o-8KI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="b78-d7-A4q" id="mZw-kF-tka"/>
+                        <segue destination="Xeg-yw-HFf" kind="showDetail" identifier="toWallPaper" id="HBq-Rr-rCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E89-Pn-amb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="99.400299850074973"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="Hdt-Ma-ChJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="6Jn-0P-bb0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aHd-fH-igE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QI9-ne-EWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-49"/>
+        </scene>
+        <!--WallPaper-->
+        <scene sceneID="jcl-ae-Hhv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WallPaper" id="Xeg-yw-HFf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSU-bw-hfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eb9-Hg-Plt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JGI-TX-ozh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="irO-ac-bQh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Vl-LO-eSn" kind="relationship" relationship="rootViewController" id="8Ao-gc-6jm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="be4-Ob-Dei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+</document>
