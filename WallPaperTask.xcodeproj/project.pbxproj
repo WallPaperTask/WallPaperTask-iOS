@@ -26,6 +26,7 @@
 		B7BCEBAE216CADFF00B893A2 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBAD216CADFF00B893A2 /* Task.storyboard */; };
 		B7BCEBB0216CAE0400B893A2 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBAF216CAE0400B893A2 /* Setting.storyboard */; };
 		B7BCEBB2216CAE0800B893A2 /* WallPaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBB1216CAE0800B893A2 /* WallPaper.storyboard */; };
+		B7BCEBB4216CB28A00B893A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */; };
 		B8D70CE66E7A552A77B89A31 /* Pods_WallPaperTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938233525E576B3F1DB0C32 /* Pods_WallPaperTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		B7BCEBAD216CADFF00B893A2 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		B7BCEBAF216CAE0400B893A2 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B7BCEBB1216CAE0800B893A2 /* WallPaper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WallPaper.storyboard; sourceTree = "<group>"; };
+		B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */,
 				B7BCEB45216CAA4F00B893A2 /* LaunchScreen.storyboard */,
 				B7BCEB48216CAA4F00B893A2 /* Info.plist */,
+				B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */,
 			);
 			path = WallPaperTask;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				B7BCEBAE216CADFF00B893A2 /* Task.storyboard in Resources */,
 				B7BCEB44216CAA4F00B893A2 /* Assets.xcassets in Resources */,
 				B7BCEBB0216CAE0400B893A2 /* Setting.storyboard in Resources */,
+				B7BCEBB4216CB28A00B893A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
