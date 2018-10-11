@@ -11,4 +11,17 @@ import RealmSwift
 
 class Todo: Object {
 	@objc dynamic var title = ""
+	
+	func count() -> Bool {
+		let userDefaults = UserDefaults.standard
+		userDefaults.register(defaults: ["count" : 0])
+		var count = userDefaults.integer(forKey: "count")
+		count += 1
+		userDefaults.set(count, forKey: "count")
+		if count == 10 {
+			return true
+		}else {
+			return false
+		}
+	}
 }

@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import FirebaseAnalytics
+import StoreKit
 
 class TaskAddTableViewCell: UITableViewCell {
 	
@@ -53,6 +54,9 @@ class TaskAddTableViewCell: UITableViewCell {
 		todo.title = title
 		try! realm.write {
 			realm.add(todo)
+		}
+		if todo.count() {
+			SKStoreReviewController.requestReview()
 		}
 	}
 	
