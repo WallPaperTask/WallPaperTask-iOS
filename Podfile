@@ -9,5 +9,6 @@ target 'WallPaperTask' do
 
   pod 'RealmSwift'
   pod 'Firebase/Core'
+  pod 'SnapKit', '~> 4.0.0'
 
 end

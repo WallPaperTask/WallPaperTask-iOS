@@ -53,10 +53,12 @@ PODS:
   - Realm/Headers (3.11.0)
   - RealmSwift (3.11.0):
     - Realm (= 3.11.0)
+  - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - Firebase/Core
   - RealmSwift
+  - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -69,6 +71,7 @@ SPEC REPOS:
     - nanopb
     - Realm
     - RealmSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   Firebase: 383fa29aca93e371cab776b48a5c66544d3c2003
@@ -80,7 +83,8 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Realm: 92f09a102692b96a9a10e9617f214f15c5ab85fc
   RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 87dfc8ee95fea252cbf2ff80a1ac556b0b784700
+PODFILE CHECKSUM: e477eb7c19b473376053545a20251deba88b8a35
 
 COCOAPODS: 1.5.3
