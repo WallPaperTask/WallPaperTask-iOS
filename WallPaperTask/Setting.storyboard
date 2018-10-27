@@ -13,13 +13,28 @@
         <!--Setting View Controller-->
         <scene sceneID="1Et-Kq-rRd">
             <objects>
-                <viewController id="6se-NN-jyZ" customClass="SettingViewController" customModule="壁紙タスクン" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6se-NN-jyZ" customClass="SettingViewController" customModule="WallPaperTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x8P-h8-sus">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5uD-7V-6zv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DZp-vo-Y6g" firstAttribute="trailing" secondItem="5uD-7V-6zv" secondAttribute="trailing" id="9Yb-N8-JcX"/>
+                            <constraint firstItem="5uD-7V-6zv" firstAttribute="top" secondItem="DZp-vo-Y6g" secondAttribute="top" id="Ukt-vu-Fxj"/>
+                            <constraint firstItem="5uD-7V-6zv" firstAttribute="leading" secondItem="DZp-vo-Y6g" secondAttribute="leading" id="lVu-8q-KVr"/>
+                            <constraint firstItem="DZp-vo-Y6g" firstAttribute="bottom" secondItem="5uD-7V-6zv" secondAttribute="bottom" id="lj8-cd-kxa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DZp-vo-Y6g"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="5uD-7V-6zv" id="3t8-3k-IPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rac-Qn-fBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

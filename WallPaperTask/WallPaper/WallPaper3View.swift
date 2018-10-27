@@ -11,29 +11,29 @@ import RealmSwift
 
 class WallPaper3View: UIView {
 	
-	let realm = try! Realm()
+	private let realm = try! Realm()
 	
-	let blueLine1 = UIView()
-	let blueLine2 = UIView()
-	let blueLine3 = UIView()
-	let blueLine4 = UIView()
-	let blueLine5 = UIView()
-	let blueLine6 = UIView()
-	let blueLine7 = UIView()
+	private let blueLine1 = UIView()
+	private let blueLine2 = UIView()
+	private let blueLine3 = UIView()
+	private let blueLine4 = UIView()
+	private let blueLine5 = UIView()
+	private let blueLine6 = UIView()
+	private let blueLine7 = UIView()
 	
-	let star1 = UIImageView()
-	let star2 = UIImageView()
-	let star3 = UIImageView()
-	let star4 = UIImageView()
-	let star5 = UIImageView()
-	let star6 = UIImageView()
+	private let star1 = UIImageView()
+	private let star2 = UIImageView()
+	private let star3 = UIImageView()
+	private let star4 = UIImageView()
+	private let star5 = UIImageView()
+	private let star6 = UIImageView()
 	
-	let label1 = UILabel()
-	let label2 = UILabel()
-	let label3 = UILabel()
-	let label4 = UILabel()
-	let label5 = UILabel()
-	let label6 = UILabel()
+	private let label1 = UILabel()
+	private let label2 = UILabel()
+	private let label3 = UILabel()
+	private let label4 = UILabel()
+	private let label5 = UILabel()
+	private let label6 = UILabel()
 
 	required override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -103,7 +103,7 @@ class WallPaper3View: UIView {
 		addSubview(label6)
 	}
 	
-	func textSet() {
+	private func textSet() {
 		let todoCollection = realm.objects(Todo.self)
 		switch todoCollection.count {
 		case 6:

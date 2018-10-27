@@ -13,8 +13,8 @@ import FirebaseAnalytics
 class TaskViewController: UIViewController {
 	
 	@IBOutlet weak var tableView: UITableView!
-	let toWallpaper = UIButton()
-	let realm = try! Realm()
+	private let toWallpaper = UIButton()
+	private let realm = try! Realm()
 	private var todoList: Results<Todo>!
 	private var token: NotificationToken!
 	
@@ -46,11 +46,11 @@ class TaskViewController: UIViewController {
 		}
 	}
 	
-	func reload() {
+	private func reload() {
 		tableView.reloadData()
 	}
 	
-	@objc func tap() {
+	@objc private func tap() {
 		Analytics.logEvent("toWallPaper", parameters: nil)
 		let button = self.toWallpaper
 		UIView.animate(withDuration: 0.05, animations: {[weak button] in

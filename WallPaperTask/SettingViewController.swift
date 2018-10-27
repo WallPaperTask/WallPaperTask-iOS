@@ -9,6 +9,8 @@
 import UIKit
 
 class SettingViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ class SettingViewController: UIViewController {
 		setLayout()
     }
 	
-	func setLayout() {
+	private func setLayout() {
 		navigationItem.title = "設定"
 	}
 }

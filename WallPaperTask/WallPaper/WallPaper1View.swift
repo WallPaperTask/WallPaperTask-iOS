@@ -11,8 +11,8 @@ import RealmSwift
 
 class WallPaper1View: UIView {
 	
-	let tableView = UITableView()
-	let realm = try! Realm()
+	private let tableView = UITableView()
+	private let realm = try! Realm()
 
 	required override init(frame: CGRect) {
 		super.init(frame: frame)

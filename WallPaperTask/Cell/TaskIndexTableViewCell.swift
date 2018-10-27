@@ -11,7 +11,7 @@ import RealmSwift
 
 class TaskIndexTableViewCell: UITableViewCell {
 	
-	let backView = UIView()
+	private let backView = UIView()
 	let CheckBox = UIButton()
 	let label = UILabel()
 	
@@ -41,7 +41,7 @@ class TaskIndexTableViewCell: UITableViewCell {
 		backView.addSubview(label)
 	}
 	
-	@objc func check(sender: UIButton) {
+	@objc private func check(sender: UIButton) {
 		CheckBox.backgroundColor = UIColor.black
 		DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
 			let realm = try! Realm()

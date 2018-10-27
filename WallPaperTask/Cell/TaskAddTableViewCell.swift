@@ -13,10 +13,10 @@ import StoreKit
 
 class TaskAddTableViewCell: UITableViewCell {
 	
-	let backView = UIView()
-	let addButton = UIButton()
-	let taskInput = UITextField()
-	let userDefaults = UserDefaults.standard
+	private let backView = UIView()
+	private let addButton = UIButton()
+	private let taskInput = UITextField()
+	private let userDefaults = UserDefaults.standard
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -39,7 +39,7 @@ class TaskAddTableViewCell: UITableViewCell {
 		backView.addSubview(taskInput)
 	}
 	
-	@objc func taskSave(sender: UIButton) {
+	@objc private func taskSave(sender: UIButton) {
 		guard let text = taskInput.text else {return}
 		if text.isEmpty == false {
 			save(title: text)
@@ -47,7 +47,7 @@ class TaskAddTableViewCell: UITableViewCell {
 		}
 	}
 	
-	func save(title: String) {
+	private func save(title: String) {
 		Analytics.logEvent("addTask", parameters: nil)
 		let realm = try! Realm()
 		let todo = Todo()

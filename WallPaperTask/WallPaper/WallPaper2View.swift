@@ -11,14 +11,14 @@ import RealmSwift
 
 class WallPaper2View: UIView {
 	
-	let label1 = UILabel()
-	let label2 = UILabel()
-	let label3 = UILabel()
-	let label4 = UILabel()
-	let label5 = UILabel()
-	let label6 = UILabel()
-	let colorItems: [String] = ["28C0D0", "A4D35B", "F8A8C5", "F8CD49"]
-	let realm = try! Realm()
+	private let label1 = UILabel()
+	private let label2 = UILabel()
+	private let label3 = UILabel()
+	private let label4 = UILabel()
+	private let label5 = UILabel()
+	private let label6 = UILabel()
+	private let colorItems: [String] = ["28C0D0", "A4D35B", "F8A8C5", "F8CD49"]
+	private let realm = try! Realm()
 	
 	required override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -58,12 +58,12 @@ class WallPaper2View: UIView {
 		label6.backgroundColor = UIColor(hex: colorItems[random()])
 	}
 	
-	func random() -> Int {
+	private func random() -> Int {
 		let index = (Int)(arc4random_uniform(4))
 		return index
 	}
 	
-	func textSet() {
+	private func textSet() {
 		let todoCollection = realm.objects(Todo.self)
 		switch todoCollection.count {
 		case 6:

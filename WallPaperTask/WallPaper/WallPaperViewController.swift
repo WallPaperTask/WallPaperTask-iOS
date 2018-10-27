@@ -12,14 +12,14 @@ import FirebaseAnalytics
 class WallPaperViewController: UIViewController {
 	
 	
-	let pageControl = UIPageControl()
-	let scrollView = UIScrollView()
-	let returnButton = UIButton()
-	let saveButton = UIButton()
-	let colorEditButton = UIButton()
-	let wallPaper1View = WallPaper1View()
-	let wallPaper2View = WallPaper2View()
-	let wallPaper3View = WallPaper3View()
+	private let pageControl = UIPageControl()
+	private let scrollView = UIScrollView()
+	private let returnButton = UIButton()
+	private let saveButton = UIButton()
+	private let colorEditButton = UIButton()
+	private let wallPaper1View = WallPaper1View()
+	private let wallPaper2View = WallPaper2View()
+	private let wallPaper3View = WallPaper3View()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class WallPaperViewController: UIViewController {
 		scrollView.addSubview(colorEditButton)
     }
 	
-	@objc func save(){
+	@objc private func save(){
 		Analytics.logEvent("saveWallPaper", parameters: nil)
 		let button = self.saveButton
 		UIView.animate(withDuration: 0.05, animations: {[weak button] in
@@ -97,11 +97,11 @@ class WallPaperViewController: UIViewController {
 		}
 	}
 	
-	@objc func returunButtonAction() {
+	@objc private func returunButtonAction() {
 		dismiss(animated: true, completion: nil)
 	}
 	
-	@objc func colorEdit() {
+	@objc private func colorEdit() {
 		wallPaper2View.labelColor()
 	}
 }
