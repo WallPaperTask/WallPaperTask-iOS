@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGI-TX-ozh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGI-TX-ozh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--壁紙タスクン-->
         <scene sceneID="hvW-ng-jZL">
             <objects>
-                <viewController id="1Vl-LO-eSn" customClass="TaskViewController" customModule="壁紙タスクン" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Vl-LO-eSn" customClass="TaskViewController" customModule="WallPaperTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIU-yc-hsU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="OQ7-rf-SCX"/>
                     </view>
                     <navigationItem key="navigationItem" title="壁紙タスクン" id="Mt7-7l-Hl0">
-                        <barButtonItem key="leftBarButtonItem" title="設定" id="ERh-wf-Yye">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="setting" id="ERh-wf-Yye">
                             <connections>
                                 <segue destination="6Jn-0P-bb0" kind="push" id="ubY-1o-8KI"/>
                             </connections>
@@ -85,4 +85,7 @@
             <point key="canvasLocation" x="-23.199999999999999" y="99.400299850074973"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="setting" width="44" height="44"/>
+    </resources>
 </document>
