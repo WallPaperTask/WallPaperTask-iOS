@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B70B34BE21D765E1007A5D30 /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = B70B34BC21D765E1007A5D30 /* .env.sample */; };
 		B70B34BF21D765E1007A5D30 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B70B34BD21D765E1007A5D30 /* .env */; };
+		B70B34C121D76776007A5D30 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B34C021D76776007A5D30 /* AppUser.swift */; };
+		B70B34C321D7678B007A5D30 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B34C221D7678B007A5D30 /* Tracker.swift */; };
 		B7BCEB44216CAA4F00B893A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */; };
 		B7BCEB47216CAA4F00B893A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEB45216CAA4F00B893A2 /* LaunchScreen.storyboard */; };
 		B7BCEB92216CACCC00B893A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BCEB91216CACCC00B893A2 /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 		90565DCC46200C2F96F3AAFB /* Pods-WallPaperTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTask/Pods-WallPaperTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B70B34BC21D765E1007A5D30 /* .env.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env.sample; sourceTree = SOURCE_ROOT; };
 		B70B34BD21D765E1007A5D30 /* .env */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env; sourceTree = SOURCE_ROOT; };
+		B70B34C021D76776007A5D30 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		B70B34C221D7678B007A5D30 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		B7BCEB39216CAA4D00B893A2 /* WallPaperTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallPaperTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BCEB46216CAA4F00B893A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				B7BCEBAB216CADE500B893A2 /* Todo.swift */,
+				B70B34C021D76776007A5D30 /* AppUser.swift */,
+				B70B34C221D7678B007A5D30 /* Tracker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WallPaperTask/Pods-WallPaperTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -389,6 +396,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -405,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7BCEB98216CAD5800B893A2 /* TaskAddTableViewCell.swift in Sources */,
+				B70B34C121D76776007A5D30 /* AppUser.swift in Sources */,
 				B7BCEB9E216CADA800B893A2 /* TaskViewController.swift in Sources */,
 				B7BCEB9A216CAD6500B893A2 /* TaskIndexTableViewCell.swift in Sources */,
+				B70B34C321D7678B007A5D30 /* Tracker.swift in Sources */,
 				B7BCEBA0216CADC500B893A2 /* SettingViewController.swift in Sources */,
 				B7BCEB92216CACCC00B893A2 /* AppDelegate.swift in Sources */,
 				B7BCEBA9216CADDE00B893A2 /* WallPaper3View.swift in Sources */,

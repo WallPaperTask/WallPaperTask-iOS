@@ -1,4 +1,8 @@
 PODS:
+  - Flurry-iOS-SDK/FlurryAds (9.2.3):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (9.2.3)
+  - LicensePlist (2.0.0)
   - Realm (3.11.1):
     - Realm/Headers (= 3.11.1)
   - Realm/Headers (3.11.1)
@@ -6,17 +10,24 @@ PODS:
     - Realm (= 3.11.1)
 
 DEPENDENCIES:
+  - Flurry-iOS-SDK/FlurryAds
+  - Flurry-iOS-SDK/FlurrySDK
+  - LicensePlist
   - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Flurry-iOS-SDK
+    - LicensePlist
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  Flurry-iOS-SDK: 2ea1973a6c9c6b3675765d73ea290b281f8cb084
+  LicensePlist: 558c95c739171b96896d38fa5502f3721aada13c
   Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
 
-PODFILE CHECKSUM: 7163ea71f5d06299bc41bbcb6adc346ba1cdd411
+PODFILE CHECKSUM: 5c2b1b4281d526128ef1afc3205f903ed7712241
 
 COCOAPODS: 1.5.3

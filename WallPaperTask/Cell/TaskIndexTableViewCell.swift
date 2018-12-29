@@ -50,6 +50,7 @@ class TaskIndexTableViewCell: UITableViewCell {
 			try! realm.write {
 				realm.delete(todo[sender.tag - 1])
 				self.CheckBox.backgroundColor = UIColor.white
+                Tracker.event(.done)
 			}
 		}
 	}

@@ -56,6 +56,7 @@ class TaskAddTableViewCell: UITableViewCell {
 		if todo.count() {
 			SKStoreReviewController.requestReview()
 		}
+        Tracker.event(.add)
 	}
 	
 	override func layoutSubviews() {
