@@ -8,7 +8,6 @@
 
 import UIKit
 import RealmSwift
-import FirebaseAnalytics
 import StoreKit
 
 class TaskAddTableViewCell: UITableViewCell {
@@ -48,7 +47,6 @@ class TaskAddTableViewCell: UITableViewCell {
 	}
 	
 	private func save(title: String) {
-		Analytics.logEvent("addTask", parameters: nil)
 		let realm = try! Realm()
 		let todo = Todo()
 		todo.title = title

@@ -8,7 +8,6 @@
 
 import UIKit
 import RealmSwift
-import FirebaseAnalytics
 
 class TaskViewController: UIViewController {
 	
@@ -51,7 +50,6 @@ class TaskViewController: UIViewController {
 	}
 	
 	@objc private func tap() {
-		Analytics.logEvent("toWallPaper", parameters: nil)
 		let button = self.toWallpaper
 		UIView.animate(withDuration: 0.05, animations: {[weak button] in
 			button?.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)

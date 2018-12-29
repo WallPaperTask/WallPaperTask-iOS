@@ -26,7 +26,11 @@
 		B7BCEBAE216CADFF00B893A2 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBAD216CADFF00B893A2 /* Task.storyboard */; };
 		B7BCEBB0216CAE0400B893A2 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBAF216CAE0400B893A2 /* Setting.storyboard */; };
 		B7BCEBB2216CAE0800B893A2 /* WallPaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBB1216CAE0800B893A2 /* WallPaper.storyboard */; };
-		B7BCEBB4216CB28A00B893A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */; };
+		B7E836B621D761CE00FECAF0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B121D761CE00FECAF0 /* RxSwift.framework */; };
+		B7E836B721D761CE00FECAF0 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B221D761CE00FECAF0 /* SwiftyUserDefaults.framework */; };
+		B7E836B821D761CE00FECAF0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B321D761CE00FECAF0 /* Alamofire.framework */; };
+		B7E836B921D761CE00FECAF0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B421D761CE00FECAF0 /* RxCocoa.framework */; };
+		B7E836BA21D761CE00FECAF0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B521D761CE00FECAF0 /* SnapKit.framework */; };
 		B8D70CE66E7A552A77B89A31 /* Pods_WallPaperTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938233525E576B3F1DB0C32 /* Pods_WallPaperTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +60,11 @@
 		B7BCEBAD216CADFF00B893A2 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		B7BCEBAF216CAE0400B893A2 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B7BCEBB1216CAE0800B893A2 /* WallPaper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WallPaper.storyboard; sourceTree = "<group>"; };
-		B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7E836B121D761CE00FECAF0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B7E836B221D761CE00FECAF0 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		B7E836B321D761CE00FECAF0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B7E836B421D761CE00FECAF0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B7E836B521D761CE00FECAF0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E836B621D761CE00FECAF0 /* RxSwift.framework in Frameworks */,
+				B7E836B721D761CE00FECAF0 /* SwiftyUserDefaults.framework in Frameworks */,
+				B7E836B821D761CE00FECAF0 /* Alamofire.framework in Frameworks */,
+				B7E836B921D761CE00FECAF0 /* RxCocoa.framework in Frameworks */,
+				B7E836BA21D761CE00FECAF0 /* SnapKit.framework in Frameworks */,
 				B8D70CE66E7A552A77B89A31 /* Pods_WallPaperTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +96,11 @@
 		817D2CC91B5D8703C4F42F8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7E836B321D761CE00FECAF0 /* Alamofire.framework */,
+				B7E836B421D761CE00FECAF0 /* RxCocoa.framework */,
+				B7E836B121D761CE00FECAF0 /* RxSwift.framework */,
+				B7E836B521D761CE00FECAF0 /* SnapKit.framework */,
+				B7E836B221D761CE00FECAF0 /* SwiftyUserDefaults.framework */,
 				8938233525E576B3F1DB0C32 /* Pods_WallPaperTask.framework */,
 			);
 			name = Frameworks;
@@ -115,7 +133,6 @@
 				B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */,
 				B7BCEB45216CAA4F00B893A2 /* LaunchScreen.storyboard */,
 				B7BCEB48216CAA4F00B893A2 /* Info.plist */,
-				B7BCEBB3216CB28A00B893A2 /* GoogleService-Info.plist */,
 			);
 			path = WallPaperTask;
 			sourceTree = "<group>";
@@ -243,6 +260,7 @@
 				B7BCEB36216CAA4D00B893A2 /* Frameworks */,
 				B7BCEB37216CAA4D00B893A2 /* Resources */,
 				D0499A8D674644C86E4F0C58 /* [CP] Embed Pods Frameworks */,
+				B7E836BB21D761D300FECAF0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -297,13 +315,34 @@
 				B7BCEBAE216CADFF00B893A2 /* Task.storyboard in Resources */,
 				B7BCEB44216CAA4F00B893A2 /* Assets.xcassets in Resources */,
 				B7BCEBB0216CAE0400B893A2 /* Setting.storyboard in Resources */,
-				B7BCEBB4216CB28A00B893A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B7E836BB21D761D300FECAF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		BBED5903E2B3A98D358668D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,21 +374,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WallPaperTask/Pods-WallPaperTask-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -518,6 +551,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WallPaperTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,6 +578,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WallPaperTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
