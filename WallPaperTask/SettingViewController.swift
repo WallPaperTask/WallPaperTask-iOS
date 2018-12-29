@@ -7,88 +7,84 @@
 //
 
 import UIKit
+import SafariServices
 
-class SettingViewController: UIViewController {
+class SettingViewController: UITableViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    private let support = ["レビューする", "不具合を報告する", "お問い合わせする"]
-    private let service = ["利用規約", "プライバシーポリシー", "運営者", "ライセンス"]
-    //let version: String! = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as String
-
+    private let sections = ["サポート", "アプリについて"]
+    private let supports = ["お問い合わせ"]
+    private let apps = ["利用規約", "プライバシーポリシー", "ライセンス"]
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        tableView.backgroundColor = UIColor(hex: "E9E9E9")
         tableView.tableFooterView = UIView()
-        tableView.sectionHeaderHeight = 40
-        tableView.backgroundColor = UIColor(hex: "F6F6F6")
-		
-		setLayout()
+        navigationItem.title = "設定"
     }
-	
-	private func setLayout() {
-		navigationItem.title = "設定"
-	}
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        if offsetY <= tableView.sectionHeaderHeight && offsetY >= 0 {
-            scrollView.contentInset = UIEdgeInsets(top: -offsetY, left: 0, bottom: 0, right: 0)
-        } else if offsetY >= tableView.sectionHeaderHeight {
-            scrollView.contentInset = UIEdgeInsets(top: -tableView.sectionHeaderHeight, left: 0, bottom: 0, right: 0)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
-}
-
-extension SettingViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return support.count
+            return supports.count
         case 1:
-            return service.count
-        case 2:
-            return 1
+            return apps.count
         default:
             assertionFailure()
             return 0
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if indexPath.section == 0 {
-            cell.textLabel?.text = support[indexPath.row]
-        } else if indexPath.section == 1 {
-            cell.textLabel?.text = service[indexPath.row]
-        } else {
-            let version: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
-            cell.textLabel?.text = version
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath)
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = supports[indexPath.row]
+            cell.accessoryType = .disclosureIndicator
+        case 1:
+            cell.textLabel?.text = apps[indexPath.row]
+            cell.accessoryType = .disclosureIndicator
+        default: break
         }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        label.backgroundColor = UIColor(hex: "F6F6F6")
-        return label
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return " "
-    }
-}
-
-extension SettingViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
+            performSegue(withIdentifier: "toInfo", sender: nil)
+            
+        case (1, 0):
+            guard let url = URL(string: "https://tomoki69386.github.io/Qiita_Client/Service/Service") else { return }
+            let SFVC = SFSafariViewController(url: url)
+            present(SFVC, animated: true, completion: nil)
+            
+        case (1, 1):
+            guard let url = URL(string: "https://tomoki69386.github.io/Qiita_Client/Privacy/Privacy") else { return }
+            let SFVC = SFSafariViewController(url: url)
+            present(SFVC, animated: true, completion: nil)
+            
+        case (1, 2):
+            tableView.deselectRow(at: indexPath, animated: true)
+            guard let url = URL(string: "https://tomoki69386.github.io/Qiita_Client/Privacy/Privacy") else { return }
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        default: break
+        }
     }
 }
