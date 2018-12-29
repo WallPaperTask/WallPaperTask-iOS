@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70B34BE21D765E1007A5D30 /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = B70B34BC21D765E1007A5D30 /* .env.sample */; };
+		B70B34BF21D765E1007A5D30 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B70B34BD21D765E1007A5D30 /* .env */; };
 		B7BCEB44216CAA4F00B893A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */; };
 		B7BCEB47216CAA4F00B893A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BCEB45216CAA4F00B893A2 /* LaunchScreen.storyboard */; };
 		B7BCEB92216CACCC00B893A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BCEB91216CACCC00B893A2 /* AppDelegate.swift */; };
@@ -31,8 +33,6 @@
 		B7E836B821D761CE00FECAF0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B321D761CE00FECAF0 /* Alamofire.framework */; };
 		B7E836B921D761CE00FECAF0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B421D761CE00FECAF0 /* RxCocoa.framework */; };
 		B7E836BA21D761CE00FECAF0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E836B521D761CE00FECAF0 /* SnapKit.framework */; };
-		B7E836C121D7651D00FECAF0 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B7E836C021D7651D00FECAF0 /* .env */; };
-		B7E836C321D7654600FECAF0 /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = B7E836C221D7654600FECAF0 /* .env.sample */; };
 		B8D70CE66E7A552A77B89A31 /* Pods_WallPaperTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938233525E576B3F1DB0C32 /* Pods_WallPaperTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,8 @@
 		40D691E3CB997CA9131DF415 /* Pods-WallPaperTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTask/Pods-WallPaperTask.release.xcconfig"; sourceTree = "<group>"; };
 		8938233525E576B3F1DB0C32 /* Pods_WallPaperTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90565DCC46200C2F96F3AAFB /* Pods-WallPaperTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallPaperTask/Pods-WallPaperTask.debug.xcconfig"; sourceTree = "<group>"; };
+		B70B34BC21D765E1007A5D30 /* .env.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env.sample; sourceTree = SOURCE_ROOT; };
+		B70B34BD21D765E1007A5D30 /* .env */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env; sourceTree = SOURCE_ROOT; };
 		B7BCEB39216CAA4D00B893A2 /* WallPaperTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallPaperTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BCEB46216CAA4F00B893A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +69,6 @@
 		B7E836B321D761CE00FECAF0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B7E836B421D761CE00FECAF0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7E836B521D761CE00FECAF0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		B7E836C021D7651D00FECAF0 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
-		B7E836C221D7654600FECAF0 /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 				B7BCEB43216CAA4F00B893A2 /* Assets.xcassets */,
 				B7BCEB45216CAA4F00B893A2 /* LaunchScreen.storyboard */,
 				B7BCEB48216CAA4F00B893A2 /* Info.plist */,
-				B7E836C021D7651D00FECAF0 /* .env */,
-				B7E836C221D7654600FECAF0 /* .env.sample */,
+				B70B34BD21D765E1007A5D30 /* .env */,
+				B70B34BC21D765E1007A5D30 /* .env.sample */,
 			);
 			path = WallPaperTask;
 			sourceTree = "<group>";
@@ -316,12 +316,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E836C321D7654600FECAF0 /* .env.sample in Resources */,
 				B7BCEB47216CAA4F00B893A2 /* LaunchScreen.storyboard in Resources */,
 				B7BCEBB2216CAE0800B893A2 /* WallPaper.storyboard in Resources */,
+				B70B34BF21D765E1007A5D30 /* .env in Resources */,
 				B7BCEBAE216CADFF00B893A2 /* Task.storyboard in Resources */,
-				B7E836C121D7651D00FECAF0 /* .env in Resources */,
 				B7BCEB44216CAA4F00B893A2 /* Assets.xcassets in Resources */,
+				B70B34BE21D765E1007A5D30 /* .env.sample in Resources */,
 				B7BCEBB0216CAE0400B893A2 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
