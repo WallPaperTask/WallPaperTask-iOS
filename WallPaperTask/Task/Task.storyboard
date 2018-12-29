@@ -27,7 +27,7 @@
                         <constraints>
                             <constraint firstItem="OQ7-rf-SCX" firstAttribute="trailing" secondItem="b78-d7-A4q" secondAttribute="trailing" id="Nlk-OW-300"/>
                             <constraint firstItem="b78-d7-A4q" firstAttribute="leading" secondItem="OQ7-rf-SCX" secondAttribute="leading" id="eK6-Eg-kMZ"/>
-                            <constraint firstItem="OQ7-rf-SCX" firstAttribute="bottom" secondItem="b78-d7-A4q" secondAttribute="bottom" id="mhY-uL-9yM"/>
+                            <constraint firstAttribute="bottom" secondItem="b78-d7-A4q" secondAttribute="bottom" id="mhY-uL-9yM"/>
                             <constraint firstItem="b78-d7-A4q" firstAttribute="top" secondItem="OQ7-rf-SCX" secondAttribute="top" id="oiM-xX-vol"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OQ7-rf-SCX"/>
